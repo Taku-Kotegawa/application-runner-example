@@ -15,7 +15,7 @@ public class TestRunner01 implements ApplicationRunner {
     private final TestService testService;
 
     @Autowired
-    public TestRunner01(@Qualifier("testServiceImpl2") TestService testService) {
+    public TestRunner01(TestService testService) {
         this.testService = testService;
     }
 
