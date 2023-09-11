@@ -3,6 +3,7 @@ package com.example.applicationrunnerexample.application.batch;
 import com.example.applicationrunnerexample.application.service.TestService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
@@ -14,7 +15,7 @@ public class TestRunner01 implements ApplicationRunner {
     private final TestService testService;
 
     @Autowired
-    public TestRunner01(TestService testService) {
+    public TestRunner01(@Qualifier("testServiceImpl2") TestService testService) {
         this.testService = testService;
     }
 
