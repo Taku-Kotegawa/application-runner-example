@@ -18,6 +18,6 @@ public class TestRunner01 implements ApplicationRunner {
         }
 
         // 強制的に例外発生
-        throw new RuntimeException("error");
+        // throw new RuntimeException("error");
     }
 }
