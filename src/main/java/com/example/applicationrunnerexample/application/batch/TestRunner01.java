@@ -17,6 +17,7 @@ public class TestRunner01 implements ApplicationRunner {
             log.info(x);
         }
 
-//        throw new RuntimeException("error");
+        // 強制的に例外発生
+        throw new RuntimeException("error");
     }
 }
